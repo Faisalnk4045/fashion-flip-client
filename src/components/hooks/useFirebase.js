@@ -33,7 +33,7 @@ const useFirebase = () => {
     }
 
     const verifyEmail = (history) => {
-        const actionCodeSettings = { url: `http://localhost:3000/login` }
+        const actionCodeSettings = { url: `https://fashion-flip-4e5c4.web.app/login` }
         sendEmailVerification(auth.currentUser, actionCodeSettings)
             .then(() => {
                 // Email verification sent!
